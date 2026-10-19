@@ -10,13 +10,11 @@ The raw survey data (Excel) is in a wide format, where each business process has
 
 | File | Description |
 |------|-------------|
-| `clean_data.py` | Reads survey data from Excel, automatically detects business processes, and unpivots them into a `Fact_NghiepVu` table (support level, processing time, error type). Cross-checks related columns to flag contradictory responses with `ĐVKD_Flag`, and adds sort-order columns (`Thu_Tu_NV`, `Thu_Tu_SLA`) so items display in the correct order in Power BI. Also extracts the open-ended feedback block (TH1, TH2) into `Fact_GopY`. |
-| `clean_data_gopy.py` | Standardizes column names and unpivots the feedback data (TH1, TH2) into Long Format. Classifies each scenario as error / no error (`Trang_Thai_TinhHuong`) and flags cases that may have been missed (`Co_The_Bo_Sot`). |
+| `buildstarschema.py` | Reads survey data from Excel, automatically detects business processes, and unpivots them into a `Fact_NghiepVu` table (support level, processing time, error type). Cross-checks related columns to flag contradictory responses with `ĐVKD_Flag`, and adds sort-order columns (`Thu_Tu_NV`, `Thu_Tu_SLA`) so items display in the correct order in Power BI. Also extracts the open-ended feedback block (TH1, TH2) into `Fact_GopY`.Standardizes column names and unpivots the feedback data (TH1, TH2) into Long Format. Classifies each scenario as error / no error (`Trang_Thai_TinhHuong`) and flags cases that may have been missed (`Co_The_Bo_Sot`) |
 
 ### Outputs
 
-- `Fact_NghiepVu.csv`: business process data in Long Format
-- `Fact_GopY.csv`: open-ended feedback data
+
 
 ### Tools
 
