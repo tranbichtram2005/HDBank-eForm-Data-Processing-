@@ -150,7 +150,6 @@ DIVIDE(
     [01_Tong_Phat_Sinh], 0 )
 
 SL ĐVKD = DISTINCTCOUNT ( Fact_NghiepVu[DonVi_ID] )
-SL Người trả lời = DISTINCTCOUNT ( Fact_NghiepVu[Ma_NV] )
 ```
 
 The dashboard contains 1 slicer, 4 KPI cards, 2 stacked bar charts and 1 heatmap.
